@@ -1,0 +1,60 @@
+@font-face {
+  font-family: Manrope;
+  src: url("/static/fonts/Manrope-VariableFont_wght.ttf");
+}
+
+:root {
+  --azure: #007fff;
+  --aegion: #ff834f;
+}
+
+body {
+  margin: 0;
+  font-family: Manrope;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+img {
+  width: 200px;
+}
+
+nav > ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.btn {
+  text-decoration: none;
+  color: black;
+}
+
+.btn:hover {
+  color: var(--azure);
+}
+
+.aegion-color:hover {
+  color: var(--aegion);
+}
+
+.label {
+  border: 2px dashed #00000088;
+  padding: 0.2rem 1rem;
+  border-radius: 2rem;
+  display: block;
+}
