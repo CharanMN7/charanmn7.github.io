@@ -1,0 +1,186 @@
+@font-face {
+  font-family: Manrope;
+  src: url("/fonts/Manrope-VariableFont_wght.ttf");
+}
+
+:root {
+  --azure-color: #007fff;
+  --azure-bg-color: #007fff22;
+  --aegion-color: #ff834f;
+  --aegion-bg-color: #ff834f22;
+
+  --react-color-light: #21a0c0;
+  --react-color-dark: #61dbfb;
+  --react-bg-color: #61dbfb44;
+
+  --figma-purple: rgb(170, 91, 246);
+  --figma-bg-purple: rgb(170, 91, 246, 0.2);
+
+  --label-normal-color: #555;
+  --secondary-black: #777;
+}
+
+body {
+  margin: 0;
+  font-family: Manrope, -apple-system, BlinkMacSystemFont, avenir next, avenir,
+    segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial,
+    sans-serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  width: 100vw;
+  background-color: #ffffff55;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+header > a > img {
+  width: 200px;
+  margin-left: 0.75rem;
+}
+
+nav {
+  margin-right: 1.25rem;
+}
+
+nav > ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.btn {
+  text-decoration: none;
+  color: black;
+}
+
+.btn:hover {
+  color: var(--azure-color);
+}
+
+.label {
+  border: 1px dashed #00000088;
+  padding: 0.2rem 1rem;
+  border-radius: 2rem;
+  display: block;
+}
+
+main {
+  padding: 1rem;
+  text-align: center;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  height: fit-content;
+  width: 100%;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+#main-labels {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.react-label-light {
+  color: var(--react-color-light);
+  background-color: var(--react-bg-color);
+  border-color: var(--react-color-light);
+}
+
+.aegion-color {
+  color: var(--aegion-color);
+}
+
+.aegion-color:hover {
+  text-decoration: underline;
+}
+
+.aegion-label {
+  color: var(--aegion-color);
+  background-color: var(--aegion-bg-color);
+  border-color: var(--aegion-color);
+}
+
+.figma-purple-label {
+  color: var(--figma-purple);
+  background-color: var(--figma-bg-purple);
+  border-color: var(--figma-purple);
+}
+
+.normal-label {
+  color: var(--label-normal-color);
+  border-color: var(--label-normal-color);
+}
+
+#benefit {
+  color: var(--secondary-black);
+}
+
+#call-to-action {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+#call-to-action > a {
+  color: var(--azure-color);
+}
+
+#call-to-action > a:hover {
+  text-decoration: underline;
+}
+
+.contact-btn {
+  background-color: var(--azure-color);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  text-decoration: none;
+}
+
+.contact-btn:hover {
+  background-color: var(--figma-purple);
+  color: white;
+}
+
+.azure-color-label {
+  color: var(--azure-color);
+  background-color: var(--azure-bg-color);
+  border-color: var(--azure-color);
+}
+
+.line {
+  border: 1px dashed #00000088;
+  border-bottom: none;
+}
+
+figure > img {
+  width: 100%;
+}
+
+.heading-link {
+  font-size: 1.5rem;
+}
