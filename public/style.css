@@ -34,7 +34,7 @@ header {
   position: sticky;
   top: 0;
   width: 100vw;
-  background-color: #ffffff55;
+  background-color: #ffffff88;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 }
@@ -173,7 +173,7 @@ h1 {
 }
 
 .line {
-  border: 1px dashed #00000088;
+  border: 1px dashed #00000022;
   border-bottom: none;
 }
 
