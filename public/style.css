@@ -177,8 +177,46 @@ h1 {
   border-bottom: none;
 }
 
+section {
+  padding: 2rem;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+#projects > h2 {
+  font-size: 8rem;
+  margin: 0;
+  font-weight: 900;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+
+.center-heading {
+  text-align: center;
+}
+
+#projects-grid {
+  display: grid;
+  /* grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); */
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+}
+figure {
+  margin: 0;
+}
+
 figure > img {
   width: 100%;
+  border-radius: 12px;
+}
+
+figcaption > h3 {
+  font-weight: normal;
+  margin: 0.5rem 0;
+}
 
 .ext-link {
   display: inline-block;
@@ -198,6 +236,13 @@ figure > img {
   mask: url("/images/external-link-black.svg") no-repeat center / contain;
 }
 
+figcaption > h3 > a:hover {
+  color: var(--azure-color);
+}
+
+figcaption p {
+  margin: 0.5rem 0;
+  color: var(--secondary-black);
 }
 
 .heading-link {
