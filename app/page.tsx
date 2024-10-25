@@ -60,10 +60,9 @@ export default function Home() {
           <span className={styles.black_and_white_text}>
             design-oriented full-stack web developer.
           </span>{" "}
-          I creating{" "}
-          <span className={styles.black_and_white_text}>beautiful</span> and{" "}
-          <span className={styles.black_and_white_text}>fast</span> websites and
-          web apps. I am open to work for contract, part-time, full-time
+          I build <span className={styles.black_and_white_text}>beautiful</span>{" "}
+          and <span className={styles.black_and_white_text}>fast</span> websites
+          and web apps. I am open to work for contract, part-time, full-time
           positions. Need a website or a web app? Or have a
           contract/part-time/full-time position for a web developer?{" "}
           <span
