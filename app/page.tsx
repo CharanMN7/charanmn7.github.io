@@ -5,6 +5,7 @@ import ProjectsCarousel from "@/components/projects-carousel";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import { Cog } from "lucide-react";
+import { useRouter } from "next/navigation";
 
 const styles = {
   black_and_white_text: "text-black dark:text-white",
@@ -37,6 +38,9 @@ const skills = [
 ];
 
 export default function Home() {
+  const router = useRouter();
+  router.push("/under-construction");
+
   return (
     <>
       <div className="container p-12 max-w-screen-lg mx-auto mb-28">
