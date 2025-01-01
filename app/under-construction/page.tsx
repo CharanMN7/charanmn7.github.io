@@ -1,5 +1,4 @@
-import { Button } from "@/components/ui/button";
-import { Cog, Linkedin } from "lucide-react";
+import { Cog } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
