@@ -1,6 +1,7 @@
 "use client"
 import { useState } from "react";
 import { Button } from "../ui/button";
+import { ModeToggle } from "../mode-toggle";
 
 export default function TopBar() {
   // This is a simple top bar with the name of the user and the current time that updates live
@@ -19,12 +20,15 @@ export default function TopBar() {
         Charan
       </Button>
 
-      <p className="font-semi-bold text-xs">
-        {/* Time is displayed here in HH:MM AM/PM format */}
-        {currentTime.toLocaleTimeString('en-US', {
-          hour: '2-digit', minute: '2-digit'
-        })}
-      </p>
+      <div className="flex items-center space-x-2">
+        <ModeToggle />
+        <p className="font-semi-bold text-xs">
+          {/* Time is displayed here in HH:MM AM/PM format */}
+          {currentTime.toLocaleTimeString('en-US', {
+            hour: '2-digit', minute: '2-digit'
+          })}
+        </p>
+      </div>
     </header>
   );
 }
