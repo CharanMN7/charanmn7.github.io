@@ -15,7 +15,9 @@ export default function MainDropdown() {
       </DropdownMenuTrigger>
       <DropdownMenuContent align="start" alignOffset={1}>
         <DropdownMenuItem asChild>
-          <Link href="/about" className="text-primary"><UserRound /> About Charan</Link>
+          <Link href="/about" className="text-primary">
+            <UserRound /> About Charan
+          </Link>
         </DropdownMenuItem>
 
         <DropdownMenuSeparator />
