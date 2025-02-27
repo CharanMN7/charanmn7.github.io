@@ -1,4 +1,4 @@
-import TopBar from "@/components/os/top-bar";
+import TopBar from "@/components/os/top-bar/top-bar";
 
 export default function Home() {
   return (

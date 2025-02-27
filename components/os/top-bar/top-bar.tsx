@@ -1,7 +1,7 @@
 "use client"
 import { useState } from "react";
-import { Button } from "../ui/button";
-import { ModeToggle } from "../mode-toggle";
+import { Button } from "../../ui/button";
+import { ModeToggle } from "../../mode-toggle";
 
 export default function TopBar() {
   // This is a simple top bar with the name of the user and the current time that updates live
