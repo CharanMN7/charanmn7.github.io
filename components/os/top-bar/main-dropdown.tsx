@@ -23,7 +23,9 @@ export default function MainDropdown() {
         <DropdownMenuSeparator />
 
         <DropdownMenuItem asChild>
-          <Link href="/settings" className="text-primary"><User /> Settings</Link>
+          <Link href="/settings" className="text-primary">
+            <User /> Settings
+          </Link>
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
