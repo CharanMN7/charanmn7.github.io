@@ -1,7 +1,7 @@
 "use client"
 import { useState, useEffect } from "react";
-import { Button } from "../../ui/button";
 import { ModeToggle } from "../../mode-toggle";
+import MainDropdown from "./main-dropdown";
 
 export default function TopBar() {
   // This is a simple top bar with the name of the user and the current time that updates live
@@ -20,9 +20,7 @@ export default function TopBar() {
 
   return (
     <header className="px-2 py-1 border-b flex justify-between items-center">
-      <Button variant="ghost" size="xs" className="font-bold ">
-        Charan
-      </Button>
+      <MainDropdown />
 
       <div className="flex items-center space-x-2">
         <ModeToggle />
