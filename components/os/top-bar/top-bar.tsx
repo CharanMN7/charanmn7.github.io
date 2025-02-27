@@ -1,5 +1,5 @@
 "use client"
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Button } from "../../ui/button";
 import { ModeToggle } from "../../mode-toggle";
 
@@ -7,12 +7,16 @@ export default function TopBar() {
   // This is a simple top bar with the name of the user and the current time that updates live
   const [currentTime, setCurrentTime] = useState(new Date());
 
-  // This function updates the time every second
-  const updateTime = () => {
-    setCurrentTime(new Date());
-  }
-  // This function is called every second to update the time
-  setInterval(updateTime, 1000);
+  // Use useEffect to create the interval once when component mounts
+  useEffect(() => {
+    // Create interval to update time every second
+    const timer = setInterval(() => {
+      setCurrentTime(new Date());
+    }, 1000);
+
+    // Clean up the interval when component unmounts
+    return () => clearInterval(timer);
+  }, []); // Empty dependency array ensures effect runs only once
 
   return (
     <header className="px-2 py-1 border-b flex justify-between items-center">
@@ -23,7 +27,6 @@ export default function TopBar() {
       <div className="flex items-center space-x-2">
         <ModeToggle />
         <p className="font-semi-bold text-xs">
-          {/* Time is displayed here in HH:MM AM/PM format */}
           {currentTime.toLocaleTimeString('en-US', {
             hour: '2-digit', minute: '2-digit'
           })}
