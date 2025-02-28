@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Card, CardHeader } from "../ui/card";
 import { Separator } from "../ui/separator";
+import { ExternalLinkIcon } from "lucide-react";
 
 interface WorkExpItemProps {
   title: string;
@@ -14,7 +15,7 @@ export default function WorkExpCard() {
   return (
     <Card className="w-[300px] gap-4 py-4">
       <CardHeader className="text-lg font-bold pl-4">Work Experience</CardHeader>
-      <Separator />
+      <div className="w-full border-t border-dashed" />
       <WorkExpItem
         title="Software Engineer Intern"
         company="Aegion Dynamic"
@@ -32,7 +33,7 @@ function WorkExpItem({ title, company, website, date, description }: WorkExpItem
       <h3 className="font-semibold">{title}</h3>
 
       <div className="flex justify-between">
-        <Link href={website} className="text-muted-foreground text-xs text-orange-500 hover:underline" target="_blank">{company}</Link>
+        <Link href={website} className="text-xs hover:underline hover:text-blue-500 inline-flex items-center" target="_blank">{company} <ExternalLinkIcon size={12} className="ml-1" /></Link>
         <p className="text-muted-foreground text-xs">{date}</p>
       </div>
 
