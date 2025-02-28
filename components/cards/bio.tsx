@@ -1,11 +1,12 @@
 import { Card, CardContent, CardHeader } from "../ui/card";
 import Link from "next/link";
+import DashedSeparator from "../ui/dashed-separator";
 
 export default function BioCard() {
   return (
     <Card className="gap-4 pt-4">
       <CardHeader className="text-xl font-semibold">Bio</CardHeader>
-      <div className="w-full border-t border-dashed" />
+      <DashedSeparator />
       <CardContent className="space-y-2">
         <ul className="text-sm space-y-2">
           <li>🧑🏻‍💻 Software Engineer Intern at {""}

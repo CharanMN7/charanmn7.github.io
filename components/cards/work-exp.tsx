@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Card, CardHeader } from "../ui/card";
 import { Separator } from "../ui/separator";
 import { ExternalLinkIcon } from "lucide-react";
+import DashedSeparator from "../ui/dashed-separator";
 
 interface WorkExpItemProps {
   title: string;
@@ -15,7 +16,7 @@ export default function WorkExpCard() {
   return (
     <Card className="w-[300px] gap-4 pt-4">
       <CardHeader className="text-lg font-bold">Work Experience</CardHeader>
-      <div className="w-full border-t border-dashed" />
+      <DashedSeparator />
       <WorkExpItem
         title="Software Engineer Intern"
         company="Aegion Dynamic"
