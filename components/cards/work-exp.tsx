@@ -13,8 +13,8 @@ interface WorkExpItemProps {
 
 export default function WorkExpCard() {
   return (
-    <Card className="w-[300px] gap-4 py-4">
-      <CardHeader className="text-lg font-bold pl-4">Work Experience</CardHeader>
+    <Card className="w-[300px] gap-4 pt-4">
+      <CardHeader className="text-lg font-bold">Work Experience</CardHeader>
       <div className="w-full border-t border-dashed" />
       <WorkExpItem
         title="Software Engineer Intern"
@@ -29,7 +29,7 @@ export default function WorkExpCard() {
 
 function WorkExpItem({ title, company, website, date, description }: WorkExpItemProps) {
   return (
-    <div className="flex flex-col gap-1 px-4">
+    <div className="flex flex-col gap-1 px-6">
       <h3 className="font-semibold">{title}</h3>
 
       <div className="flex justify-between">
