@@ -4,6 +4,7 @@ import DashedSeparator from "../ui/dashed-separator";
 import { ArrowRight } from "lucide-react";
 import { Button } from "../ui/button";
 import { Separator } from "../ui/separator";
+import { cn } from "@/lib/utils";
 
 const blogs = [
   {
@@ -18,9 +19,9 @@ const blogs = [
   },
 ]
 
-export default function BlogsCard() {
+export default function BlogsCard({ className }: { className?: string }) {
   return (
-    <Card className="gap-4 pt-4 w-full">
+    <Card className={cn("gap-4 pt-4 w-full", className)}>
       <CardHeader className="text-xl font-semibold">Blogs</CardHeader>
       <DashedSeparator />
       <CardContent className="space-y-2">

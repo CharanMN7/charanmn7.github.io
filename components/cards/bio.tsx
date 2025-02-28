@@ -1,10 +1,11 @@
 import { Card, CardContent, CardHeader } from "../ui/card";
 import Link from "next/link";
 import DashedSeparator from "../ui/dashed-separator";
+import { cn } from "@/lib/utils";
 
-export default function BioCard() {
+export default function BioCard({ className }: { className?: string }) {
   return (
-    <Card className="gap-4 pt-4 w-full">
+    <Card className={cn("gap-4 pt-4 w-full", className)}>
       <CardHeader className="text-xl font-semibold">Bio</CardHeader>
       <DashedSeparator />
       <CardContent className="space-y-2">

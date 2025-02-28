@@ -3,6 +3,7 @@ import { Card, CardHeader } from "../ui/card";
 import { Separator } from "../ui/separator";
 import { ExternalLinkIcon } from "lucide-react";
 import DashedSeparator from "../ui/dashed-separator";
+import { cn } from "@/lib/utils";
 
 interface WorkExpItemProps {
   title: string;
@@ -12,9 +13,9 @@ interface WorkExpItemProps {
   description: string;
 }
 
-export default function WorkExpCard() {
+export default function WorkExpCard({ className }: { className?: string }) {
   return (
-    <Card className="gap-4 pt-4 w-full">
+    <Card className={cn("gap-4 pt-4 w-full", className)}>
       <CardHeader className="text-lg font-bold">Work Experience</CardHeader>
       <DashedSeparator />
       <WorkExpItem

@@ -6,10 +6,11 @@ import xlogo from "@/public/xcom.svg";
 import instagramLogo from "@/public/instagram.svg";
 import youtubeLogo from "@/public/youtube.png";
 import githubLogo from "@/public/github.svg";
+import { cn } from "@/lib/utils";
 
-export default function MeCard() {
+export default function MeCard({ className }: { className?: string }) {
   return (
-    <Card className="w-full">
+    <Card className={cn("w-full", className)}>
       <CardContent className="flex items-center space-x-4 mx-auto">
         <Image
           src="https://uvt8fr24f6.ufs.sh/f/vP5L84ZPMm9e4vDFCg9lXC92ZNpdreBKExyJizWuAkoU1OvS"
