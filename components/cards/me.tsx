@@ -22,13 +22,13 @@ export default function MeCard() {
         <div>
           <h1 className="font-bold text-4xl">Charan</h1>
 
-          <Link href="mailto:hello@charan.dev" className="text-sm text-muted-foreground">
+          <Link target="_blank" href="mailto:hello@charan.dev" className="text-sm text-muted-foreground">
             hello@charan.dev
           </Link>
 
           <div className="flex space-x-2 mt-2">
             <Button variant="outline" size="icon" className="rounded-full" asChild>
-              <Link href="https://x.com/CharanMNX/">
+              <Link target="_blank" href="https://x.com/CharanMNX/">
                 <Image
                   src={xlogo}
                   alt="X"
@@ -38,7 +38,7 @@ export default function MeCard() {
               </Link>
             </Button>
             <Button variant="outline" size="icon" className="rounded-full" asChild>
-              <Link href="https://iam.charan.dev/">
+              <Link target="_blank" href="https://iam.charan.dev/">
                 <Image
                   src={instagramLogo}
                   alt="Instagram"
@@ -48,7 +48,7 @@ export default function MeCard() {
               </Link>
             </Button>
             <Button variant="outline" size="icon" className="rounded-full" asChild>
-              <Link href="https://www.youtube.com/@charan-dev">
+              <Link target="_blank" href="https://www.youtube.com/@charan-dev">
                 <Image
                   src={youtubeLogo}
                   alt="YouTube"
@@ -58,7 +58,7 @@ export default function MeCard() {
               </Link>
             </Button>
             <Button variant="outline" size="icon" className="rounded-full p-0" asChild>
-              <Link href="https://github.com/CharanXMNX">
+              <Link target="_blank" href="https://github.com/CharanMN7">
                 <Image
                   src={githubLogo}
                   alt="GitHub"
