@@ -16,7 +16,7 @@ export default function BioCard() {
             💻 Full-stack Developer
           </li>
           <li>
-            ✨ Currently building <Link href="https://www.genlingo.app/" className="text-purple-500 hover:underline" target="_blank">Genlingo</Link>
+            ✨ Currently building <Link href="https://genlingo.app/" className="text-purple-500 hover:underline" target="_blank">Genlingo</Link>
           </li>
         </ul>
       </CardContent>
