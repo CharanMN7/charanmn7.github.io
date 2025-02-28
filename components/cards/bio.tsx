@@ -10,7 +10,7 @@ export default function BioCard() {
         <Separator />
         <ul className="text-sm space-y-2">
           <li>🧑🏻‍💻 Software Engineer Intern at {""}
-            <Link href="https://www.aegiondynamic.com/" className="text-orange-500 hover:underline" target="_blank">Aegion Dynamic</Link>
+            <Link href="https://www.aegiondynamic.com/" className="hover:underline" target="_blank">Aegion Dynamic</Link>
           </li>
           <li>
             💻 Full-stack Developer
