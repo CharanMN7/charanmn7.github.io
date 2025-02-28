@@ -1,0 +1,54 @@
+import Link from "next/link";
+import { Card, CardContent, CardHeader } from "../ui/card";
+import DashedSeparator from "../ui/dashed-separator";
+import { ArrowRight } from "lucide-react";
+import { Button } from "../ui/button";
+import { Separator } from "../ui/separator";
+
+const blogs = [
+  {
+    title: "LLMs & Agents",
+    description: "All about LLMs and Agents",
+    href: "",
+  },
+  {
+    title: "Genlingo",
+    description: "A blog for korean language learners",
+    href: "",
+  },
+]
+
+export default function BlogsCard() {
+  return (
+    <Card className="w-[300px] gap-4 pt-4">
+      <CardHeader className="text-xl font-semibold">Blogs</CardHeader>
+      <DashedSeparator />
+      <CardContent className="space-y-2">
+        <ul className="text-sm space-y-2">
+          {blogs.map((blog, index) => (
+            <>
+              <BlogItem key={index} {...blog} />
+              {index < blogs.length - 1 && <Separator />}
+            </>
+          ))}
+        </ul>
+      </CardContent>
+    </Card>
+  );
+}
+
+function BlogItem({ title, description, href }: { title: string; description: string; href: string }) {
+  return (
+    <li className="flex justify-between items-center">
+      <div>
+        <h3 className="text-lg font-light">{title}</h3>
+        <p className="text-muted-foreground truncate w-[180px]">{description}</p>
+      </div>
+      <Button variant="outline" size="icon" className="rounded-full" disabled title="Coming soon">
+        <Link href={href} className="hover:underline" target="_blank">
+          <ArrowRight className="-rotate-45" />
+        </Link>
+      </Button>
+    </li>
+  );
+}
