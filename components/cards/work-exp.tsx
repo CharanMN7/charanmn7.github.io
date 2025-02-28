@@ -15,7 +15,7 @@ interface WorkExpItemProps {
 
 export default function WorkExpCard({ className }: { className?: string }) {
   return (
-    <Card className={cn("gap-4 pt-4 w-full", className)}>
+    <Card className={cn("gap-4 pt-4 w-full h-full", className)}>
       <CardHeader className="text-lg font-bold">Work Experience</CardHeader>
       <DashedSeparator />
       <WorkExpItem
