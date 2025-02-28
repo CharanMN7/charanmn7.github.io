@@ -9,8 +9,8 @@ import githubLogo from "@/public/github.svg";
 
 export default function MeCard() {
   return (
-    <Card className="w-fit">
-      <CardContent className="flex items-center space-x-4">
+    <Card className="w-full">
+      <CardContent className="flex items-center space-x-4 mx-auto">
         <Image
           src="https://uvt8fr24f6.ufs.sh/f/vP5L84ZPMm9e4vDFCg9lXC92ZNpdreBKExyJizWuAkoU1OvS"
           width={100}

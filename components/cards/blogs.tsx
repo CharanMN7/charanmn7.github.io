@@ -20,7 +20,7 @@ const blogs = [
 
 export default function BlogsCard() {
   return (
-    <Card className="w-[300px] gap-4 pt-4">
+    <Card className="gap-4 pt-4 w-full">
       <CardHeader className="text-xl font-semibold">Blogs</CardHeader>
       <DashedSeparator />
       <CardContent className="space-y-2">

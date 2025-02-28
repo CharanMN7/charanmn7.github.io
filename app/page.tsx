@@ -5,7 +5,7 @@ import WorkExpCard from "@/components/cards/work-exp";
 
 export default function Home() {
   return (
-    <div className="h-screen flex flex-col items-center space-y-4 py-4">
+    <div className="flex flex-col items-center space-y-4 p-8 max-w-[450px] mx-auto">
       <MeCard />
       <BioCard />
       <WorkExpCard />

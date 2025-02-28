@@ -4,7 +4,7 @@ import DashedSeparator from "../ui/dashed-separator";
 
 export default function BioCard() {
   return (
-    <Card className="gap-4 pt-4">
+    <Card className="gap-4 pt-4 w-full">
       <CardHeader className="text-xl font-semibold">Bio</CardHeader>
       <DashedSeparator />
       <CardContent className="space-y-2">
