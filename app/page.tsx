@@ -1,6 +1,6 @@
 import BioCard from "@/components/cards/bio";
 import BlogsCard from "@/components/cards/blogs";
-import CoffeeCard from "@/components/cards/coffee";
+// import CoffeeCard from "@/components/cards/coffee";
 import GenlingoCard from "@/components/cards/genlingo";
 import MeCard from "@/components/cards/me";
 import WorkExpCard from "@/components/cards/work-exp";
@@ -14,7 +14,7 @@ export default function Home() {
         <GenlingoCard />
         <WorkExpCard />
         <BlogsCard />
-        <CoffeeCard />
+        {/* <CoffeeCard /> */}
         {/* Projects */}
       </div>
     </div>
