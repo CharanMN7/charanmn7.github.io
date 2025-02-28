@@ -5,11 +5,14 @@ import WorkExpCard from "@/components/cards/work-exp";
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center space-y-4 p-8 max-w-[450px] mx-auto">
-      <MeCard />
-      <BioCard />
-      <WorkExpCard />
-      <BlogsCard />
+    <div className="md:flex md:items-center md:justify-center md:h-screen">
+      <div className="flex flex-col items-center space-y-4 p-8 max-w-[450px] mx-auto md:grid md:grid-cols-2 md:space-y-0 md:gap-4 md:max-w-[800px] md:place-items-stretch">
+        <MeCard />
+        <BioCard />
+        <WorkExpCard />
+        <BlogsCard />
+        {/* Projects */}
+      </div>
     </div>
   );
 }
