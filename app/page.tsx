@@ -1,4 +1,5 @@
 import BioCard from "@/components/cards/bio";
+import BlogsCard from "@/components/cards/blogs";
 import MeCard from "@/components/cards/me";
 import WorkExpCard from "@/components/cards/work-exp";
 
@@ -8,6 +9,7 @@ export default function Home() {
       <MeCard />
       <BioCard />
       <WorkExpCard />
+      <BlogsCard />
     </div>
   );
 }
