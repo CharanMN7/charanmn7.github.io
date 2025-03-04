@@ -16,7 +16,7 @@ export async function POST(req: NextRequest) {
       headers: {
         "Content-Type": "application/x-www-form-urlencoded",
       },
-      body: formBody.toString(),
+      body: formBody,
     });
 
     return NextResponse.json({ success: response.ok });
