@@ -24,7 +24,7 @@ export default function GenlingoCard({ className }: { className?: string }) {
           </h2>
           <p className="text-muted-foreground">Signup for the waitlist today!</p>
         </div>
-        <Button variant="outline" size="icon" className="rounded-full" disabled title="Coming soon">
+        <Button variant="outline" size="icon" className="rounded-full">
           <Link href="https://genlingo.app" className="hover:underline" target="_blank">
             <ArrowRight size={16} className="-rotate-45" />
           </Link>
