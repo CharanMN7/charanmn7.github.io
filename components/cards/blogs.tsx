@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { Card, CardContent, CardHeader } from "../ui/card";
 import DashedSeparator from "../ui/dashed-separator";
 import { ArrowRight } from "lucide-react";
@@ -66,9 +65,9 @@ function BlogItem({ title, description, href }: { title: string; description: st
         <p className="text-muted-foreground truncate w-[180px] md:w-[250px]">{description}</p>
       </div>
       <Button variant="outline" size="icon" className="rounded-full" disabled={href == "" ? true : false} title="Coming soon" asChild={href == "" ? false : true}>
-        <Link href={href} className="hover:underline" target="_blank">
+        <a href={href} className="hover:underline" target="_blank">
           <ArrowRight className="-rotate-45" />
-        </Link>
+        </a>
       </Button>
     </li>
   );
@@ -87,11 +86,6 @@ function RecentBlogPost({ title, description, href, src, alt }: { title: string;
           <p className="text-muted-foreground truncate w-[179px]">{description}</p>
         </div>
       </div>
-      {/* <Button variant="outline" size="icon" className="rounded-full" disabled={href == "" ? true : false} title="Coming soon" asChild={href == "" ? false : true}>
-        <Link href={href} className="hover:underline" target="_blank">
-          <ArrowRight className="-rotate-45" />
-        </Link>
-      </Button> */}
     </a>
   );
 }
