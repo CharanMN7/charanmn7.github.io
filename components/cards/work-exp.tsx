@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { Card, CardHeader } from "../ui/card";
 import { Separator } from "../ui/separator";
 import { ExternalLinkIcon } from "lucide-react";
@@ -39,7 +38,7 @@ function WorkExpItem({ title, company, website, date, children }: WorkExpItemPro
       <h3 className="font-semibold">{title}</h3>
 
       <div className="flex justify-between">
-        <Link href={website} className="text-xs hover:underline hover:text-blue-500 inline-flex items-center" target="_blank">{company} <ExternalLinkIcon size={12} className="ml-1" /></Link>
+        <a href={website} className="text-xs hover:underline hover:text-blue-500 inline-flex items-center" target="_blank">{company} <ExternalLinkIcon size={12} className="ml-1" /></a>
         <p className="text-muted-foreground text-xs">{date}</p>
       </div>
 

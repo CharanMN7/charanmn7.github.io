@@ -4,7 +4,6 @@ import { Button } from "../ui/button";
 import { Separator } from "../ui/separator";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
-import Link from "next/link";
 
 export default function GenlingoCard({ className }: { className?: string }) {
   return (
@@ -25,9 +24,9 @@ export default function GenlingoCard({ className }: { className?: string }) {
           <p className="text-muted-foreground">Try Genlingo for free!</p>
         </div>
         <Button variant="outline" size="icon" className="rounded-full" asChild>
-          <Link href="https://genlingo.app" className="hover:underline" target="_blank">
+          <a href="https://genlingo.app" className="hover:underline" target="_blank">
             <ArrowRight size={16} className="-rotate-45" />
-          </Link>
+          </a>
         </Button>
       </section>
     </Card>
