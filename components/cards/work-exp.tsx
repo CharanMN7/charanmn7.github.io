@@ -10,7 +10,7 @@ interface WorkExpItemProps {
   company: string;
   website: string;
   date: string;
-  description: string;
+  children?: React.ReactNode;
 }
 
 export default function WorkExpCard({ className }: { className?: string }) {
@@ -23,13 +23,17 @@ export default function WorkExpCard({ className }: { className?: string }) {
         company="Aegion Dynamic"
         website="https://aegiondynamic.com/"
         date="May 2024 - Present"
-        description="Worked on several client projects, including a Next.js app to replicate their existing system on Airtable and build additional features."
-      />
+      >
+        <ul className="text-sm space-y-2 px-4 list-disc">
+          <li className="text-muted-foreground text-sm">Worked on several client projects, including a Next.js app to replicate client&apos;s existing system on Airtable, built additional features on top of it.</li>
+          <li className="text-muted-foreground text-sm">Eliminated the need for upfront per user payments on Airtable by creating a custom frontend and backend solution.</li>
+        </ul>
+      </WorkExpItem>
     </Card>
   );
 }
 
-function WorkExpItem({ title, company, website, date, description }: WorkExpItemProps) {
+function WorkExpItem({ title, company, website, date, children }: WorkExpItemProps) {
   return (
     <div className="flex flex-col gap-1 px-6">
       <h3 className="font-semibold">{title}</h3>
@@ -41,7 +45,7 @@ function WorkExpItem({ title, company, website, date, description }: WorkExpItem
 
       <Separator className="my-2" />
 
-      <p className="text-muted-foreground text-sm">{description}</p>
+      {children}
     </div>
   );
 }
