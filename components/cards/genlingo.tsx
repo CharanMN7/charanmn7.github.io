@@ -22,9 +22,9 @@ export default function GenlingoCard({ className }: { className?: string }) {
           <h2 className="text-2xl font-semibold">
             Genlingo
           </h2>
-          <p className="text-muted-foreground">Signup for the waitlist today!</p>
+          <p className="text-muted-foreground">Try Genlingo for free!</p>
         </div>
-        <Button variant="outline" size="icon" className="rounded-full">
+        <Button variant="outline" size="icon" className="rounded-full" asChild>
           <Link href="https://genlingo.app" className="hover:underline" target="_blank">
             <ArrowRight size={16} className="-rotate-45" />
           </Link>
