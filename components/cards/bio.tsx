@@ -2,6 +2,7 @@ import { Card, CardContent, CardHeader } from "../ui/card";
 import Link from "next/link";
 import DashedSeparator from "../ui/dashed-separator";
 import { cn } from "@/lib/utils";
+import { ArrowRight } from "lucide-react";
 
 export default function BioCard({ className }: { className?: string }) {
   return (
@@ -18,6 +19,12 @@ export default function BioCard({ className }: { className?: string }) {
           </li>
           <li>
             ✨ Currently building <Link href="https://genlingo.app/" className="text-purple-500 hover:underline" target="_blank">Genlingo</Link>
+          </li>
+          <li>
+            🚀 3x Hackathon Winner
+          </li>
+          <li>
+            🎮 I built a <a href="https://www.sprint.dev/projects/54526899-0a31-4a08-869f-fdb1f7762888" className="underline text-red-400 inline-flex items-center">minecraft mod! <ArrowRight className="-rotate-45 h-4 w-4" /></a>
           </li>
         </ul>
       </CardContent>
