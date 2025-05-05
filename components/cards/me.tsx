@@ -70,7 +70,7 @@ export default function MeCard({ className }: { className?: string }) {
             </Button>
           </div>
           <div className="flex space-x-2 mt-2">
-            <a href="https://www.aedin.com/in/charan-manikanta/" className="underline text-blue-400 inline-flex items-center" target="_blank">LinkedIn <ArrowRight className="-rotate-45 w-4 h-4" /></a>
+            <a href="https://www.linkedin.com/in/charan-manikanta/" className="underline text-blue-400 inline-flex items-center" target="_blank">LinkedIn <ArrowRight className="-rotate-45 w-4 h-4" /></a>
           </div>
         </div>
       </CardContent>
